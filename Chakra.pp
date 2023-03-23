@@ -226,9 +226,7 @@ implementation
 
   function CallFunction;
   begin
-    Writeln('antes del call function');
-    TryChakraAPI('JsCallFunction', JsCallFunction(Func, Args, ArgCount, @Result));
-    Writeln('dps del call function');
+    TryChakraAPI('JsCallFunction', JsCallFunction(Func, Args, ArgCount, Result));
   end;
 
 end.
